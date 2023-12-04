@@ -1,0 +1,184 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding-top: 50px; /* Adjust the top padding to change the header height */
+    padding-bottom: 50px; /* Adjust the bottom padding as needed */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .header-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .main-nav {
+    margin: 0; /* Center the navigation */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the items horizontally */
+  }
+  
+  .main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .main-nav li {
+    margin-right: 15px;
+    margin-bottom: 10px;
+    position: relative; /* Set the positioning context for the dropdown */
+  }
+  .main-nav a {
+    text-decoration: none;
+    color: #ffffff; /* Set the text color */
+    font-size: 30px; /* Adjust the font size for smaller screens */
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  /* Dropdown styling */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+  
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content a {
+    color: #fff;
+    padding: 8px 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+  }
+  
+  /* Existing styles below this line */
+  
+
+  #container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px;
+  }
+  
+  #main-content {
+    flex-grow: 2;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: #eee;
+    min-height: 100vh; /* Change to min-height to ensure content expands in smaller screens */
+    text-align: center;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+  
+  #sidebar {
+    flex-basis: 250px;
+    padding: 20px;
+    background-color: #eee;
+    margin: 10px;
+    border-radius: 20px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+  
+  /* Fancy Search Box Styling */
+  .search-box {
+    display: flex;
+    align-items: center;
+    margin-top: 10px; /* Add margin at the top for spacing */
+    padding: 20px;
+  }
+  
+  .search-box input {
+    width: 300px; /* Set the width of the input field to 100% */
+    padding: 10px;
+    border: 2px solid #333333;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  
+  .search-box button {
+    background-color: #08e013;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .search-box button:hover {
+    -webkit-background-color: #0a8e1b;
+    -moz-background-color: #0a8e1b;
+    background-color: #0a8e1b;
+}
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    position: fixed; /* Fixed position to stay at the bottom */
+    bottom: 0;
+    position: inherit;
+  }
+  
+  /* Media query for screens with a maximum width of 720 pixels */
+  @media screen and (max-width: 720px) {
+    .main-nav {
+      flex-basis: 100%; /* Make the main navigation take up the full width */
+    }
+  
+    .search-box {
+      margin-top: 10px; /* Add margin at the top for spacing */
+    }
+  
+    .search-box input {
+      width: 100%; /* Set the width of the input field to 100% */
+    }
+  
+    #sidebar {
+      flex-basis: 100%; /* Make the sidebar take up the full width */
+    }
+  }
+  /* Add this style to your existing CSS or in a style tag in the head section */
+  #myCarousel {
+    max-width: 600px; /* Set the maximum width of the carousel container */
+    margin: auto; /* Center the carousel within the main-content */
+  }
+
+  .carousel-inner img {
+    max-width: 100%; /* Set the maximum width of the images to 100% of the container */
+    height: auto; /* Maintain the aspect ratio */
+  }
+
+  /* Existing styles above this line */
+
+
